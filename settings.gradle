@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Hilt-issues-2550"
