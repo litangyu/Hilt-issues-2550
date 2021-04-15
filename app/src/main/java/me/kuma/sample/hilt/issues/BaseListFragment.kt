@@ -6,5 +6,5 @@ package me.kuma.sample.hilt.issues
  * Created on: 4/15/21 3:48 PM
  * @author lty <a href="mailto:lty81372860@gmail.com">Contact me.</a>
  */
-abstract class BaseListFragment<VM: BaseListViewModel>: BaseFragment<VM>() {
+abstract class BaseListFragment<VM: BaseListViewModel.ViewModel>: BaseFragment<VM>() {
 }

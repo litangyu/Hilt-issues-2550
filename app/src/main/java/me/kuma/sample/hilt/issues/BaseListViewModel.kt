@@ -6,7 +6,7 @@ package me.kuma.sample.hilt.issues
  * Created on: 4/15/21 3:49 PM
  * @author lty <a href="mailto:lty81372860@gmail.com">Contact me.</a>
  */
-interface BaseListViewModel : BaseViewModel {
+interface BaseListViewModel {
 
   open class ViewModel : BaseViewModel.ViewModel(), BaseListViewModel {
 

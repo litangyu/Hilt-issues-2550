@@ -8,5 +8,5 @@ package me.kuma.sample.hilt.issues
  */
 interface BaseViewModel {
 
-  open class ViewModel: androidx.lifecycle.ViewModel() {}
+  open class ViewModel : androidx.lifecycle.ViewModel(), BaseViewModel {}
 }

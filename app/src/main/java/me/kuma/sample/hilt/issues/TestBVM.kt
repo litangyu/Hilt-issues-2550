@@ -1,7 +1,6 @@
 package me.kuma.sample.hilt.issues
 
 import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.ViewModel
 
 /**
  * Description here.
@@ -12,7 +11,7 @@ import androidx.lifecycle.ViewModel
 interface TestBVM {
 
   class VM
-  @ViewModelInject constructor() : ViewModel(), TestBVM {
+  @ViewModelInject constructor() : BaseViewModel.ViewModel(), TestBVM {
 
   }
 }

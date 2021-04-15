@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import androidx.lifecycle.ViewModelProvider
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -22,5 +23,10 @@ class TestBFragment : BaseFragment<TestBVM.VM>() {
     return FrameLayout(requireContext()).apply {
       setBackgroundColor(Color.RED)
     }
+  }
+
+  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    viewModel = ViewModelProvider(this).get(TestBVM.VM::class.java)
+    super.onViewCreated(view, savedInstanceState)
   }
 }
